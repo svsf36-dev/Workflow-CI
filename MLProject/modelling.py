@@ -5,7 +5,7 @@ import mlflow
 import mlflow.sklearn
 
 # Set alamat tracking server MLflow lokal
-mlflow.set_tracking_uri("http://127.0.0.1:5000")
+# mlflow.set_tracking_uri("http://127.0.0.1:5000")
 mlflow.set_experiment("Heart_Disease_Autolog_Lokal")
 
 data_path = "dataset_clean.csv"
