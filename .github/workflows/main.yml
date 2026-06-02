@@ -29,7 +29,7 @@ jobs:
         cd MLProject
         # Mengatur tracking URI agar menyimpan log ke folder lokal di lingkungan GitHub
         export MLFLOW_TRACKING_URI=file://$(pwd)/mlruns
-        python modelling.py
+        mlflow run MLproject
 
     - name: Upload Training Artifacts to GitHub
       if: always()
